@@ -1,0 +1,7 @@
+com\example\makespace\makespace\printResult\ResultPrintImplTest.class
+com\example\makespace\makespace\person\CheckPersonImplTest.class
+com\example\makespace\makespace\DAO\ReservationDAOImplTest.class
+com\example\makespace\makespace\HelperPackage\BookingHelperImplTest.class
+com\example\makespace\makespace\HelperPackage\VacancyHelperImplTest.class
+com\example\makespace\makespace\HelperPackage\SuperHelperImplTest.class
+com\example\makespace\makespace\time\CheckTimeImplTest.class

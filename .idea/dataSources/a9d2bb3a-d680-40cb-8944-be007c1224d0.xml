@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="makespace@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.20">
+    <root id="1">
+      <ServerVersion>5.0.77</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="employee_directory"/>
+    <schema id="3" parent="1" name="hb-01-one-to-one-uni"/>
+    <schema id="4" parent="1" name="hb-03-one-to-many"/>
+    <schema id="5" parent="1" name="hb-04-one-to-many-uni"/>
+    <schema id="6" parent="1" name="hb-05-many-to-many"/>
+    <schema id="7" parent="1" name="hb_student_tracker"/>
+    <schema id="8" parent="1" name="information_schema"/>
+    <schema id="9" parent="1" name="makespace">
+      <Current>1</Current>
+    </schema>
+    <schema id="10" parent="1" name="mysql"/>
+    <schema id="11" parent="1" name="mysql_practice"/>
+    <schema id="12" parent="1" name="powerdale"/>
+    <schema id="13" parent="1" name="spring_security_demo_bcrypt"/>
+    <schema id="14" parent="1" name="spring_security_demo_plaintext"/>
+    <schema id="15" parent="1" name="test"/>
+    <schema id="16" parent="1" name="web_customer_tracker"/>
+    <table id="17" parent="9" name="meetingroom"/>
+    <table id="18" parent="9" name="reservation"/>
+    <routine id="19" parent="9" name="getFreeMeetingRooms">
+      <SourceTextLength>432</SourceTextLength>
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <column id="20" parent="17" name="Id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="21" parent="17" name="room_id">
+      <Position>2</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="17" name="room_name">
+      <Position>3</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="23" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="24" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="25" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="26" parent="18" name="room_id">
+      <Position>2</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="18" name="start_time">
+      <Position>3</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="18" name="end_time">
+      <Position>4</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="29" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="30" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <argument id="31" parent="19" name="startTime">
+      <Position>1</Position>
+      <DataType>VARCHAR(5)|12s</DataType>
+    </argument>
+    <argument id="32" parent="19" name="endTime">
+      <Position>2</Position>
+      <DataType>VARCHAR(5)|12s</DataType>
+    </argument>
+  </database-model>
+</dataSource>
